@@ -6,4 +6,6 @@ train/
 logs/
 *.ipynb
 *.md
+*.safatensors
+app/finetuned_model/
 finetuned_model/checkpoint-*
