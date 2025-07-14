@@ -1,8 +1,10 @@
+import os
+os.environ["HF_HOME"] = "/tmp/hf_home"
+os.makedirs("/tmp/hf_cache", exist_ok=True)
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from app.filter_review import filter_review
-import os
-os.environ['TRANSFORMERS_CACHE'] = '/tmp/hf_cache'
 
 app = FastAPI()
 

@@ -9,3 +9,4 @@ logs/
 *.safatensors
 app/finetuned_model/
 finetuned_model/checkpoint-*
+upload_to_hf.py

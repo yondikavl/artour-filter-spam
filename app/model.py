@@ -1,5 +1,4 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
 
 MODEL_NAME = "indobenchmark/indobert-base-p1"
 MODEL_FINETUNED = "yondikavl/artour-spam-filter"
