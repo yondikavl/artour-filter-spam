@@ -1,0 +1,11 @@
+__pycache__/
+train/
+*.csv
+*.bin
+*.pt
+logs/
+*.ipynb
+*.md
+*.safatensors
+app/finetuned_model/
+finetuned_model/checkpoint-*
