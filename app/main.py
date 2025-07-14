@@ -1,5 +1,5 @@
 import os
-os.environ["TRANSFORMERS_CACHE"] = "/tmp/hf_cache"
+os.environ["HF_HOME"] = "/tmp/hf_home"
 os.makedirs("/tmp/hf_cache", exist_ok=True)
 
 from fastapi import FastAPI
