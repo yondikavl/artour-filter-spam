@@ -1,3 +1,8 @@
+import os
+os.environ["TRANSFORMERS_CACHE"] = "/data/cache"
+os.makedirs("/data/cache", exist_ok=True)
+
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
