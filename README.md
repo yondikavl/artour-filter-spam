@@ -23,13 +23,15 @@ Model machine learning yang digunakan adalah hasil fine-tuning dari **IndoBERT**
 
 ## 📂 Struktur Proyek
 
-├── app/
-│ ├── filter_review.py # Fungsi untuk memproses teks dan memprediksi spam/non-spam
-│ ├── model.py # Load model & tokenizer dari HuggingFace Hub
-├── app.py # Entry point FastAPI (atau main.py jika belum diubah)
-├── requirements.txt # Daftar dependency Python
-├── Dockerfile # Konfigurasi container (opsional, untuk VPS)
-└── README.md # Dokumentasi proyek
+```
+app/
+ ├── filter_review.py   # Fungsi untuk memproses teks dan memprediksi spam/non-spam
+ ├── model.py           # Load model & tokenizer dari HuggingFace Hub
+app.py                  # Entry point FastAPI
+requirements.txt        # Daftar dependency Python
+Dockerfile              # Konfigurasi container (opsional, untuk VPS)
+README.md               # Dokumentasi proyek
+```
 
 ---
 
