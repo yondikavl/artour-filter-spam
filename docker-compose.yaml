@@ -14,10 +14,10 @@ services:
       - ./tmp:/app/tmp
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.artour-iv.rule=Host(`spamvalidator.artour-lampung.com`)"
-      - "traefik.http.routers.artour-iv.entrypoints=websecure"
-      - "traefik.http.routers.artour-iv.tls.certresolver=resolver"
-      - "traefik.http.services.artour-iv.loadbalancer.server.port=7860"
+      - "traefik.http.routers.artour-fs.rule=Host(`spamvalidator.artour-lampung.com`)"
+      - "traefik.http.routers.artour-fs.entrypoints=websecure"
+      - "traefik.http.routers.artour-fs.tls.certresolver=resolver"
+      - "traefik.http.services.artour-fs.loadbalancer.server.port=7860"
     # ports:
     #   - "7860:7860"
       
