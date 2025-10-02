@@ -10,6 +10,8 @@ services:
     restart: always
     networks:
         - net-artour
+    volumes:
+      - ./tmp:/app/tmp
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.artour-iv.rule=Host(`spamvalidator.artour-lampung.com`)"
