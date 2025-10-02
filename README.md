@@ -59,6 +59,12 @@ curl -X POST "http://localhost:7860/filter-review" \
      -d '{"text": "Promo murah! Klik link ini untuk hadiah gratis"}'
 ```
 
+```bash
+curl -X POST "https://spamvalidator.artour-lampung.com/filter-review" \
+     -H "Content-Type: application/json" \
+     -d '{"text": "Promo murah! Klik link ini untuk hadiah gratis"}'
+```
+
 Response:
 
 ```bash
