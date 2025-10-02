@@ -1,6 +1,6 @@
 import os
-os.environ["HF_HOME"] = "/tmp/hf_home"
-os.makedirs("/tmp/hf_cache", exist_ok=True)
+os.environ["HF_HOME"] = "./tmp/hf_home"
+os.makedirs("./tmp/hf_cache", exist_ok=True)
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch

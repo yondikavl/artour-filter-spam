@@ -1,0 +1,21 @@
+networks:
+  net-artour:
+    name: net-artour
+    external: true
+
+services:
+  artour-filter-spam:
+    container_name: artour-filter-spam
+    image: artour-filter-spam:latest
+    restart: always
+    networks:
+        - net-artour
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.artour-iv.rule=Host(`spamvalidator.artour-lampung.com`)"
+      - "traefik.http.routers.artour-iv.entrypoints=websecure"
+      - "traefik.http.routers.artour-iv.tls.certresolver=resolver"
+      - "traefik.http.services.artour-iv.loadbalancer.server.port=7860"
+    # ports:
+    #   - "7860:7860"
+      

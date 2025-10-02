@@ -45,7 +45,7 @@ Pastikan sudah install Python 3.10+
 git clone https://github.com/<username>/<repo-name>.git
 cd <repo-name>
 pip install -r requirements.txt
-uvicorn app:app --host 0.0.0.0 --port 7860
+uvicorn main:app --host 0.0.0.0 --port 7860
 ```
 
 API akan tersedia di:
